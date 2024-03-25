@@ -30,11 +30,11 @@ const Banner = () => {
                 expertise to help tailor a policy to suit your lifestyle, your
                 budget, and your priorities.
               </p>
-              <div className="flex flex-row md:flex-row md:space-x-4 ">
-                <button className="inline-flex justify-center sm:w-[180px] w-full px-4 py-3 rounded-full text-sm font-medium bg-white text-black border border-transparent shadow-sm">
+              <div className="flex sm:flex-row gap-2 sm:justify-start items-center  md:space-x-4 ">
+                <button className="inline-flex justify-center items-center sm:w-[180px]  w-[211px] h-[38px]   sm:py-3 py-0 rounded-full text-sm font-medium bg-white text-black border border-transparent shadow-sm">
                   Report a Claim
                 </button>
-                <button className="md:text-1xl text-sm bg-transparent text-white py-2 px-4 flex flex-row items-center justify-center gap-2 ">
+                <button className="md:text-1xl text-sm justify-center items-center sm:w-[180px]  w-[211px] h-[38px] bg-transparent text-white  flex flex-row  gap-2 ">
                   <p>Learn More</p> <Image src={ar} alt="Icon" />
                 </button>
               </div>
