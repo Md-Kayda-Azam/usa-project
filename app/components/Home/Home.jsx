@@ -1,35 +1,16 @@
 'use client';
-import React, { useEffect, useState } from 'react';
-import Group from '../Card/Card';
+import Card from '../Card/Card';
 import BackgroundImage from '../BackgroundImage/BackgroundImage';
 import { motion } from 'framer-motion';
 
 const HomeSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      // Calculate the scroll position
-      const scrollPosition = window.scrollY;
-      const threshold = 200;
-      setIsVisible(scrollPosition > threshold);
-    };
-
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="mx-auto px-3">
+    <>
       <section className="my-8 ">
         <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: isVisible ? 1 : 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <div className=" sm:flex  sm:items-start sm:flex-col flex justify-center flex-col items-center">
@@ -65,9 +46,9 @@ const HomeSection = () => {
           </motion.div>
         </div>
       </section>
-      <Group />
+      <Card />
       <BackgroundImage />
-    </div>
+    </>
   );
 };
 

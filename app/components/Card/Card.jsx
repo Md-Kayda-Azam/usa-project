@@ -11,8 +11,8 @@ const Card = () => {
   };
   return (
     <>
-      <div className="hidden sm:block">
-        <div className="flex items-center justify-between m-10">
+      <div className="hidden sm:flex justify-center">
+        <div className="flex flex-col items-center justify-center m-10 gap-3 lg:flex-row w-full">
           <AnimatedCard
             title="Affordable Auto Insurance"
             description="USA Underwriters offers affordable rates on quality coverage."
@@ -23,10 +23,11 @@ const Card = () => {
           />
           <AnimatedCard
             title="Price Conscious"
-            description="Price conscious consumers choose USA Underwriters for affordable auto insurance solutions."
+            description="Price-conscious consumers choose USA Underwriters for affordable auto insurance solutions."
           />
         </div>
       </div>
+
       <div className="block sm:hidden items-center flex-wrap justify-between m-10">
         <Slider {...settings}>
           <AnimatedCard

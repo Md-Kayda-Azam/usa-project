@@ -7,20 +7,22 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="px-3">
-      <Breadcrumbs title="Contact Us" />
-      <div className="flex sm:flex-row justify-center flex-col gap-5 items-center sm:my-14 mb-14 mt-5 ">
-        <div className="sm:border-t-8 border-0 rounded-md border-[#c81e1e] flex-initial sm:w-3/5 w-full">
-          <div className="max-w-full mx-auto px-10 ">
-            <div className="sm:block my-10  hidden">
-              <h4 className="text-2xl font-bold">Send Message</h4>
+    <>
+      <Breadcrumbs title="Contact Us" name="About" />
+      <div className="md:flex block gap-5 mb-16 justify-between  md:py-6 bg-white">
+        <div className="flex-1">
+          <div className="md:border-t-8 rounded-lg border shadow border-t-red-700 space-y-6 bg-white border-gray-300 p-8">
+            <div className="hidden md:block md:my-8 ">
+              <h4 className="text-3xl font-semibold text-[#111928]">
+                Send Message
+              </h4>
             </div>
-            <form>
-              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                <div className="sm:col-span-3">
+            <form className="w-full">
+              <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 mb-4 gap-8">
+                <div className="flex flex-col">
                   <label
                     for="first-name"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm font-medium leading-6 text-[#6b7280]"
                   >
                     Full Name
                   </label>
@@ -30,16 +32,14 @@ const Contact = () => {
                       name="full-name"
                       id="full-name"
                       placeholder="John"
-                      autocomplete="given-name"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="block w-full px-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
-                </div>
-
-                <div className="sm:col-span-3">
+                </div>{' '}
+                <div className="flex flex-col">
                   <label
                     for="email"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm font-medium leading-6 text-[#6b7280]"
                   >
                     Email
                   </label>
@@ -48,70 +48,66 @@ const Contact = () => {
                       type="text"
                       name="email"
                       id="email"
-                      placeholder="tester@neutrix.co"
-                      autocomplete="email"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
+                      placeholder="tester@neutrix.com"
+                      className="block w-full px-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
-                </div>
-                <div className="sm:col-span-3">
+                </div>{' '}
+                <div className="flex flex-col">
                   <label
-                    for="mobile-number"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    for="number"
+                    className="block text-sm font-medium leading-6 text-[#6b7280]"
                   >
                     Mobile Number
                   </label>
                   <div className="mt-2">
                     <input
-                      type="tel"
-                      name="mobile-number"
-                      id="mobile-number"
-                      autocomplete="mobile-number"
-                      placeholder="+1 555-1234"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
+                      type="text"
+                      name="number"
+                      id="number"
+                      placeholder="+26134522213649"
+                      className="block w-full px-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
-                </div>
-                <div className="sm:col-span-3">
+                </div>{' '}
+                <div className="flex flex-col">
                   <label
-                    for="last-name"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    for="first-name"
+                    className="block text-sm font-medium leading-6 text-[#6b7280]"
                   >
-                    Policy Number
+                    policy Number
                   </label>
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="policy-number"
-                      id="policy-number"
-                      autocomplete="policy-number"
-                      placeholder="1234546"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
+                      name="number"
+                      id="number"
+                      placeholder="+56344662"
+                      className="block w-full px-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
-                </div>
-                <div className="sm:col-span-4">
+                </div>{' '}
+                <div className="flex flex-col">
                   <label
-                    htmlFor="message"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    for="message"
+                    className="block text-sm font-medium leading-6 text-[#6b7280]"
                   >
-                    Your Message
+                    Message
                   </label>
                   <div className="mt-2">
                     <textarea
-                      rows="4"
-                      cols="100"
-                      maxlength="200"
-                      id="message"
+                      rows={10}
+                      cols={100}
+                      type="message"
                       name="message"
-                      autoComplete="message"
-                      placeholder="Message"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-gray-500 focus:outline-none sm:text-sm sm:leading-6"
+                      id="message"
+                      placeholder="message"
+                      className="block w-full px-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm  ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
               </div>
-              <div className="w-full">
+              <div className="w-full mt-5">
                 <button
                   type="submit"
                   className="inline-flex justify-center sm:w-[300px] w-full px-4 py-4 rounded-full text-sm font-medium text-white bg-red-600 border border-transparent  shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
@@ -122,10 +118,11 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="flex-initial sm:w-2/5 w-full">
-          <div className="max-w-full mx-auto sm:px-0 px-5">
-            <div className="flex flex-col">
-              <div className="w-full  p-4">
+        {/**Card Items */}
+        <div className="md:my-0 my-10">
+          <div className="max-w-full mx-auto ">
+            <div className="flex flex-col md:w-auto w-full gap-5">
+              <div className="w-full border shadow-sm bg-white rounded-md  p-4">
                 <div className="mb-4 p-5 border relative border-red-100 bg-red-600 rounded-full flex justify-center items-center w-14 h-14">
                   <Image
                     src={phone}
@@ -135,7 +132,6 @@ const Contact = () => {
                     className="absolute m-auto"
                   />
                 </div>
-
                 <h4 className="text-lg font-semibold">
                   General In quiries & C S
                 </h4>
@@ -178,7 +174,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full  p-4">
+              <div className="w-full border shadow-sm bg-white rounded-md  p-4">
                 <div className="mb-4 p-5 border relative border-red-100 bg-gray-200 rounded-full flex justify-center items-center w-14 h-14">
                   <svg
                     width="24"
@@ -247,7 +243,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full  p-4">
+              <div className="w-full border shadow-sm bg-white rounded-md  p-4">
                 <div className="mb-4 p-5 border relative border-red-100 bg-gray-200 rounded-full flex justify-center items-center w-14 h-14">
                   <svg
                     width="22"
@@ -313,7 +309,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

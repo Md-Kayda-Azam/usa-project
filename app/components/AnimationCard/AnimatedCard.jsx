@@ -15,19 +15,21 @@ const AnimatedCard = ({ title, description }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.5 }}
-      className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-4"
+      className="w-full  border shadow-sm rounded-md bg-gray-100 p-4 m-2"
     >
-      <div className="mb-4 p-5 border relative border-red-100 bg-gray-200 rounded-full flex justify-center items-center w-14 h-14">
+      <div className="mb-4 p-3 border relative border-red-100 bg-gray-200 rounded-full flex justify-center items-center w-12 h-12">
         <Image
           src={Group_Logo}
-          width={24}
-          height={24}
+          width={20}
+          height={20}
           alt="Group"
           className="absolute m-auto"
         />
       </div>
-      <h4 className="text-lg font-semibold">{title}</h4>
-      <p className="text-sm text-gray-500">{description}</p>
+      <h4 className="text-md sm:text-lg font-semibold">{title}</h4>
+      <div className="lg:h-20 sm:h-auto h-16  overflow-y-auto">
+        <p className="text-sm text-gray-500">{description}</p>
+      </div>
     </motion.div>
   );
 };

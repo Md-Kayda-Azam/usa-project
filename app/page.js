@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function Home() {
   return (
-    <main >
+    <main className="bg-white ">
       <Banner />
       <HomeSection />
     </main>

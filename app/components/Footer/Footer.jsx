@@ -18,8 +18,8 @@ const Footer = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="bg-[#1f2a37]">
-        <div className="max-w-[1440px] m-auto p-0">
-          <div className="hidden sm:block  text-white px-14 py-10">
+        <div className="max-w-[1440px] xl:px-20 md:px-10 sm:px-5  px-3  m-auto p-0">
+          <div className="hidden sm:block  text-white  py-10">
             <div className="grid md:grid-cols-3 gap-5 sm:grid-cols-2">
               <div className="col-span-1 gap-3 grid">
                 <span>USA Underwriters</span>
@@ -311,6 +311,19 @@ const Footer = () => {
           </div>
           {/*Mobile Footer*/}
           <MobileFooter />
+        </div>
+      </div>
+
+      {/** Copy right section */}
+      <div className="bg-white">
+        <div className=" max-w-[1440px] sm:px-20 px-3 mx-auto block md:flex justify-between py-6 space-y-4 md:space-y-0    text-black">
+          <p className="text-center text-sm md:text-md md:text-left">
+            Copyright 2022 USA Underwriters |{' '}
+            <strong>Privacy Policy | Terms of Use</strong>
+          </p>
+          <p className="text-sm md:text-md text-center">
+            ( Built by Neutrix - Powered by Neutrix Systems )
+          </p>
         </div>
       </div>
     </motion.div>

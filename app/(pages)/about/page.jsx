@@ -10,13 +10,13 @@ const About = () => {
   return (
     <>
       <Breadcrumbs title="About Us" name="About us" />
-      <div className="container mx-auto px-4 py-5">
+      <div className=" py-5 bg-white">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0, scaleY: 1.2 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mt-8 flex sm:justify-between flex-col sm:flex-row gap-x-24 sm:items-center items-start">
+          <div className="mt-5  flex sm:justify-between flex-col sm:flex-row gap-x-24 sm:items-center items-start">
             <div className="mb-4">
               <h2 className="text-sm font-medium mb-2 sm:block hidden">
                 About Us
@@ -33,15 +33,20 @@ const About = () => {
             </div>
           </div>
         </motion.div>
-        <div>
-          <Image src={image} alt="Image" />
+        <div className="w-full">
+          <Image
+            src={image}
+            alt="Image"
+            className="w-full h-full object-cover"
+          />
         </div>
+
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0, scaleY: 1.2 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mt-8">
+          <div className="mt-8 py-10">
             <p className="mb-4 text-gray-700 text-sm">
               In 2013, Southern Michigan Mutual Insurance Company became USA
               Underwriters. The name may have changed, but the dedication to our

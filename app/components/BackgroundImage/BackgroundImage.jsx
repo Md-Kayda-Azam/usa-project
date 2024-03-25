@@ -22,7 +22,7 @@ const BackgroundImage = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div className="my-20">
+    <div className="py-20 bg-white">
       <div className="max-w-auto sm:h-[500px]  sm:relative">
         {isVisible && (
           <Image

@@ -17,7 +17,7 @@ const Banner = () => {
   };
   return (
     <Slider {...settings}>
-      <div className="px-3">
+      <div className="px-3 mt-10">
         <div className="w-full bg-red-600 rounded-lg">
           <div className="grid grid-cols-1 gap-20 md:grid-cols-2">
             <div className="p-8">

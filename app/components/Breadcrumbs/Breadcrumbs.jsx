@@ -22,10 +22,10 @@ const Breadcrumbs = ({ title, name }) => {
       animate={{ opacity: isVisible ? 1 : 0, y: 0, scaleX: 1, scaleY: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-full">
-        <div className="flex items-center gap-5 my-5 flex-col space-x-2 ">
+      <div className="w-full bg-white sm:mb-0 mb-5">
+        <div className="flex items-center gap-5 py-10  flex-col space-x-2 ">
           <h4 className="text-4xl font-semibold">{title}</h4>
-          <div className="flex justify-between gap-2 items-center">
+          <div className="flex justify-between gap-2  items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

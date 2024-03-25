@@ -5,7 +5,7 @@ const PolicyHolder = () => {
   return (
     <>
       <Breadcrumbs title="Privacy Policy" name="Privacy Policy" />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto  py-8">
         <div className="mt-8">
           <h2 className="text-lg font-bold mb-4">Terms of Use</h2>
           <p className="text-gray-700 text-sm">
