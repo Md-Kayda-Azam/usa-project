@@ -11,14 +11,14 @@ const Contact = () => {
       <Breadcrumbs title="Contact Us" name="About" />
       <div className="md:flex block gap-5 mb-16 justify-between  md:py-6 bg-white">
         <div className="flex-1">
-          <div className="md:border-t-8 rounded-lg border shadow border-t-red-700 space-y-6 bg-white border-gray-300 p-8">
+          <div className="md:border-t-8 rounded-lg md:border shadow-md md:border-t-red-700 space-y-6 bg-white border md:p-8 p-4 pt-0">
             <div className="hidden md:block md:my-8 ">
               <h4 className="text-3xl font-semibold text-[#111928]">
                 Send Message
               </h4>
             </div>
             <form className="w-full">
-              <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 mb-4 gap-8">
+              <div className="md:mt-10 grid grid-cols-1 lg:grid-cols-2 mb-4 gap-8">
                 <div className="flex flex-col">
                   <label
                     for="first-name"
@@ -96,8 +96,8 @@ const Contact = () => {
                   </label>
                   <div className="mt-2">
                     <textarea
-                      rows={10}
-                      cols={100}
+                      rows={5}
+                      cols={50}
                       type="message"
                       name="message"
                       id="message"
