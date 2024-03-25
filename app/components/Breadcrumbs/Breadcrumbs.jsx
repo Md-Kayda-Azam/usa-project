@@ -23,7 +23,7 @@ const Breadcrumbs = ({ title, name }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="w-full bg-white sm:mb-0 mb-5">
-        <div className="flex items-center gap-5 py-10  flex-col space-x-2 ">
+        <div className="flex items-center gap-5 sm:py-10 pb-0   flex-col space-x-2 ">
           <h4 className="text-4xl font-semibold">{title}</h4>
           <div className="flex justify-between gap-2  items-center">
             <svg
